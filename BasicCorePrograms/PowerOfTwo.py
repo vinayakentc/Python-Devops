@@ -11,4 +11,5 @@ def PowerOf2(n):
 
 
 if __name__ == '__main__':
+    
     PowerOf2(n)  # Function call
