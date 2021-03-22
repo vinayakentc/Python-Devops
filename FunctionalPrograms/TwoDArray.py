@@ -1,3 +1,11 @@
+"""
+   * author - ${Vinayak Chavan}
+   * date - ${22-03-2021}
+   * time - ${11:56  a.m}
+   * package - ${PACKAGE_NAME}
+   * Title - A library for reading in 2D arrays of integers, doubles, or booleans from standard input and printing them out to standard output.
+"""
+
 # functions for twod array for reading int, double and bool type
 def TwoDArray(rows, cols):
     # created an array with row * col size
