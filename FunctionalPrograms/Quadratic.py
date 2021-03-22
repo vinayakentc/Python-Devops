@@ -1,3 +1,11 @@
+"""
+   * author - ${Vinayak Chavan}
+   * date - ${22-03-2021}
+   * time - ${11:49 a.m}
+   * package - ${PACKAGE_NAME}
+   * Title - Write a program to find the roots of the equation a*x*x + b*x + c. Since the equation is x*x, hence there are 2 roots.
+"""
+
 from cmath import sqrt
 
 
