@@ -1,3 +1,10 @@
+"""
+   * author - ${Vinayak Chavan}
+   * date - ${22-03-2021}
+   * time - ${11:49 a.m}
+   * package - ${PACKAGE_NAME}
+   * Title - Write a program that takes two integer command-line arguments x and y and prints the Euclidean distance from the point (x, y) to the origin (0, 0). The formulae to calculate distance = sqrt(x*x + y*y). Use Math.power function 
+"""
 from cmath import sqrt
 
 
