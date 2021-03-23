@@ -1,35 +1,41 @@
+"""
+   * author - ${Vinayak Chavan}
+   * date - ${22-03-2021}
+   * time - ${11:42 a.m}
+   * package - ${PACKAGE_NAME}
+   * Title - Print the prime factors of number N.
 
-# Python program to print prime factors
+"""
 
 import math
 
-n=int(input("Enter an integer:"))
+class factors :
 
-# A function to print all prime factors of
-# a given number n
-def primeFactors(n):
-
-    # Print the number of two's that divide n
-    while n % 2 == 0:
-        print 2,
-        n = n / 2
-
-    # n must be odd at this point
-    # so a skip of 2 ( i = i + 2) can be used
-    for i in range(3, int(math.sqrt(n) ) +1, 2):
-
-        # while i divides n, print i ad divide n
-        while n % i == 0:
-            print i,
-            n = n / i
-
-            # Condition if n is a prime
-    # number greater than 2
-    if n > 2:
-        print n
-
-    # Driver Program to test above function
+    # method for calculating prime factor
+    def calculateFactor(self,userNumber) :
+        # print the two and divide by two if remainder is zero
+        while userNumber % 2 == 0:
+            print ('2'),
+            userNumber = userNumber / 2
+        # find square root and increment by 2 in range of 3 to squareroot value
+        for i in range(3, int(math.sqrt(userNumber)) + 1, 2):
+            while userNumber % i == 0:
+                print(i)
+                userNumber = userNumber / i
+        # some time prime factor remaining at last so tat will print
+        if userNumber >2 :
+            print(int(userNumber))
 
 
-primeFactors(n)
-
+# main
+if __name__ == '__main__' :
+    # Exception Handling
+    try:
+        # accepting Number from User
+        userNumber = int(input('Enter a number : '))
+        # creating object and pass Parameter
+        factorsObject = factors()
+        # Calling Method CalculateFactor
+        factorsObject.calculateFactor(userNumber)
+    except :
+        print('Exception Raised.')
